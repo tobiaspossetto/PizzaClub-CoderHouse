@@ -55,6 +55,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     text-decoration: underline;
+    color: white;
 }
 
 header nav ul li .activo {
@@ -110,16 +111,13 @@ header .eslogan .btn:hover {
     display: flex;
     justify-items: center;
     margin-bottom: 30px;
-}
-
-.sidebar .contenedor-img {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .sidebar img {
-    width: 60%;
+    width: calc(1em + 28vw);
 }
 
 .contenido {
@@ -133,7 +131,7 @@ header .eslogan .btn:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 80%;
 }
 
 .contenido .info h2 {
@@ -143,7 +141,7 @@ header .eslogan .btn:hover {
     font-weight: 400;
     text-align: justify;
     color: black;
-    font-size: calc(0.8em + 0.8vw);
+    font-size: calc(0.6em + 1vw);
 }
 
 .contenido .info .btn {
@@ -157,7 +155,7 @@ header .eslogan .btn:hover {
     padding-bottom: 10px;
     border-radius: 7px;
     border: none;
-    font-size: calc(1em + 0.6vw);
+    font-size: calc(1em + 0.5vw);
 }
 
 .contenido .info .btn:hover {
@@ -174,10 +172,10 @@ footer {
     width: 100%;
     height: 200px;
     background: rgb(3, 3, 70);
-    background: linear-gradient(117deg, rgba(3, 3, 70, 1) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 95%);
+    background: black;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 footer .footer-nav {
@@ -257,6 +255,12 @@ footer .footer-nav .subir a img {
     }
     .contenedor-boton {
         margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar img {
+        width: calc(1em + 40vw);
     }
 }
 
