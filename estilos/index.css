@@ -130,7 +130,7 @@ header .eslogan .btn:hover {
 }
 
 .contenido .info {
-    width: 100%;
+    width: 70%;
 }
 
 .contenido .info .parrafo {
@@ -140,17 +140,14 @@ header .eslogan .btn:hover {
 }
 
 .contenido .info h2 {
-    /*
-    font-size: 30px;
-    */
     font-weight: 400;
     text-align: justify;
     color: black;
-    font-size: calc(0.8em + 0.8vw);
+    font-size: calc(0.7em + 0.5vw);
 }
 
 .contenido .info .btn {
-    margin-top: 5%;
+    margin-top: 3%;
     text-decoration: none;
     color: white;
     background-color: #FFB40D;
@@ -160,7 +157,7 @@ header .eslogan .btn:hover {
     padding-bottom: 10px;
     border-radius: 7px;
     border: none;
-    font-size: calc(0.6em + 0.6vw);
+    font-size: calc(0.6em + 0.5vw);
 }
 
 .contenido .info .btn:hover {
@@ -259,6 +256,12 @@ footer .footer-nav .subir a img {
     }
     .contenedor-boton {
         margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contenido .info {
+        width: 100%;
     }
 }
 
