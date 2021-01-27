@@ -4,52 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PizzaClub/Inicio</title>
+    <title>PizzaClub/Carta</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../estilos/carta.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
-<body class="grid-carta">
-    <header class="header">
-        <!-- esto es para el menu responsive ya que el nav es el mismo para todas -->
-        <div class="menu_bar">
+<body>
 
-            <img src="../assets/img/logo.png" width="70px" alt="">
-            <div class="contenedor-boton">
+    <div class="container-fluid">
 
-                <a href="#" class="bt-menu"><img width="40px" class="icon-list2" src="../assets/img/menu.png" alt=""> </a>
-            </div>
+        <div class="row ">
+            <header class="header  col-sm-12">
+                <div class="menu_bar ">
+
+                    <img class="" src="../assets/img/logo.png" width="70px" alt="">
+                    <div class="contenedor-boton">
+
+                        <a href="#" class="bt-menu"><img width="40px" class="icon-list2" src="../assets/img/menu.png" alt=""> </a>
+                    </div>
+                </div>
+                <nav>
+
+                    <div class="icono wow animate__animated animate__fadeInLeft ">
+                        <img src="../assets/img/logo.png" width="180px" alt="">
+                    </div>
+                    <ul class=" wow animate__animated animate__fadeInDownBig">
+                        <li><a href="../index.html">Inicio</a> </li>
+                        <li><a class="activo" href="#">Carta</a> </li>
+                        <li><a href="pages/especialidad.html">Especialidad</a> </li>
+                        <li><a href="pages/nosotros.html">Nosotros</a> </li>
+                        <li class="ultimo"><a href="pages/contacto.html">Contacto</a> </li>
+                    </ul>
+                </nav>
+                <div class="eslogan  ">
+                    <h1> <strong class="nombre">PIZZA CLUB</strong>, <br> TU OPCIÓN POR EXCELENCIA</h1>
+
+                    <a class="btn    wow animate__animated animate__pulse animate__backInUp" href="pages/carta.html">Ver Carta</a>
+                </div>
+            </header>
         </div>
-        <nav>
 
-            <div class="icono   wow animate__animated animate__fadeInLeft">
-                <img src="../assets/img/logo.png" width="180px" alt="">
-            </div>
-            <ul class=" wow animate__animated animate__fadeInDownBig">
-                <li><a href="../index.html">Inicio</a> </li>
-                <li><a class="activo" href="#">Carta</a> </li>
-                <li><a href="especialidad.html">Especialidad</a> </li>
-                <li><a href="nosotros.html">Nosotros</a> </li>
-                <li class="ultimo"><a href="contacto.html">Contacto</a> </li>
-            </ul>
-        </nav>
-        <div class="eslogan">
-            <h1>COMPARTÍ <br>CON FAMILIA Y AMIGOS</h1>
-            <hr class="linea">
+    </div>
 
+    <main class="row  contenido">
+        <div class="textos  col-sm-12 ">
+            <h2>Porque amamos la vida, le ponemos pasión a la comida.</h2>
+            <p>En <strong>Pizza Club</strong> te ofrecemos lo mejor, para que lo disfrutes con la mejor compañia.</p>
         </div>
-
-
-
-    </header>
-    <main class="contenido">
-        <h2>Porque amamos la vida, le ponemos pasión a la comida.</h2>
-        <p>En <strong>Pizza Club</strong> te ofrecemos lo mejor, para que lo disfrutes con la mejor compañia.</p>
     </main>
-    <div class="platos">
 
-        <div class="platos-italiano wow animate__animated animate__zoomInLeft ">
+    <div class="row menus">
+
+        <div class="italianos  col-lg-4  col-10 wow animate__animated animate__zoomInLeft  ">
             <div class="contenedor-italiano ">
 
                 <div class="titulo">
@@ -118,11 +127,191 @@
                 </div>
             </div>
         </div>
-        <div class="platos-americano wow animate__animated animate__zoomInRight">
-            <div class="contenedor-americano  ">
+        <div class=""></div>
+        <div class="americanos  col-lg-4  col-10"></div>
+    </div>
+    </div>
+    <div class="row bebidas">
+        <div class="menu-bebidas  col-md-6 col-10">
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="../menu.js"></script>
+    <script src="../wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+
+
+<!--
+
+        
+        <div class="row container-fluid">
+
+            <div class="platos col col-sm-12">
+                <div class="row container">
+
+                    <div class="col-md-6 platos-italiano wow animate__animated animate__zoomInLeft ">
+                        <div class="contenedor-italiano ">
+
+                            <div class="titulo">
+                                <h3>ITALIANAS</h3>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row container-fluid">
+
+                    <div class="col-md-6 platos-americano wow animate__animated animate__zoomInRight">
+                        <div class="contenedor-americano  ">
+
+                            <div class="titulo">
+                                <h3>AMERICANAS</h3>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                            <div class="info">
+                                <p>Nombre</p>
+                                <p><strong>$235</strong> </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bebidas ">
+            <div class=" contenedor-bebidas wow animate__animated animate__zoomInUp">
 
                 <div class="titulo">
-                    <h3>AMERICANAS</h3>
+                    <h3>BEBIDAS</h3>
                 </div>
                 <div class="info">
                     <p>Nombre</p>
@@ -169,84 +358,11 @@
                     <p>Nombre</p>
                     <p><strong>$235</strong> </p>
                 </div>
-                <div class="info">
-                    <p>Nombre</p>
-                    <p><strong>$235</strong> </p>
-                </div>
-                <div class="info">
-                    <p>Nombre</p>
-                    <p><strong>$235</strong> </p>
-                </div>
-                <div class="info">
-                    <p>Nombre</p>
-                    <p><strong>$235</strong> </p>
-                </div>
-                <div class="info">
-                    <p>Nombre</p>
-                    <p><strong>$235</strong> </p>
-                </div>
+
             </div>
 
 
         </div>
-    </div>
-
-    <div class="bebidas ">
-        <div class=" contenedor-bebidas wow animate__animated animate__zoomInUp">
-
-            <div class="titulo">
-                <h3>BEBIDAS</h3>
-            </div>
-            <div class="info">
-                <p>Nombre</p>
-
-                <p><strong>$235</strong> </p>
-            </div>
-            <div class="info">
-                <p>Nombre</p>
-                <p><strong>$235</strong> </p>
-            </div>
-            <div class="info">
-                <p>Nombre</p>
-                <p><strong>$235</strong> </p>
-            </div>
-            <div class="info">
-                <p>Nombre</p>
-                <p><strong>$235</strong> </p>
-            </div>
-            <div class="info">
-                <p>Nombre</p>
-                <p><strong>$235</strong> </p>
-            </div>
-            <div class="info">
-                <p>Nombre</p>
-                <p><strong>$235</strong> </p>
-            </div>
-            <div class="info">
-                <p>Nombre</p>
-                <p><strong>$235</strong> </p>
-            </div>
-            <div class="info">
-                <p>Nombre</p>
-                <p><strong>$235</strong> </p>
-            </div>
-            <div class="info">
-                <p>Nombre</p>
-                <p><strong>$235</strong> </p>
-            </div>
-            <div class="info">
-                <p>Nombre</p>
-                <p><strong>$235</strong> </p>
-            </div>
-            <div class="info">
-                <p>Nombre</p>
-                <p><strong>$235</strong> </p>
-            </div>
-
-        </div>
-
-
-    </div>
     </div>
 
     <footer class="footer">
@@ -262,17 +378,6 @@
         </div>
     </footer>
 
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="../menu.js"></script>
-    <script src="../wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-
-</body>
+    -->
 
 </html>
