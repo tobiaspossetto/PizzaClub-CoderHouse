@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway"; }
+
+body {
+  max-width: 100%;
+  margin: 0;
+  color: white;
+  overflow-x: hidden; }
+  body .header {
+    background: #090416;
+    color: white;
+    background: url(../assets/img/cartafondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 0; }
+    body .header nav {
+      width: 95%;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-between; }
+      body .header nav ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap; }
+        body .header nav ul .activo {
+          text-decoration: underline; }
+        body .header nav ul a {
+          color: white;
+          padding: 10px;
+          text-decoration: none;
+          font-size: 20px; }
+          body .header nav ul a a:hover {
+            text-decoration: underline;
+            color: white; }
+    body .header .menu_bar {
+      display: none; }
+    body .header .eslogan {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh; }
+      body .header .eslogan h1 {
+        /*
+                
+                */
+        font-weight: 400;
+        text-align: center;
+        font-size: calc(1em + 2vw); }
+        body .header .eslogan h1 .nombre {
+          color: #FFB40D; }
+      body .header .eslogan .btn {
+        margin-top: 20px;
+        text-decoration: none;
+        color: white;
+        background-color: #FFB40D;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 7px;
+        border: none;
+        font-size: calc(0.5em + 1vw); }
+        body .header .eslogan .btn .btn:hover {
+          background-color: white;
+          color: black; }
+  body .contenedor-principal {
+    margin: 0; }
+    body .contenedor-principal .sidebar {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      margin-bottom: 30px; }
+      body .contenedor-principal .sidebar img {
+        width: 100%; }
+    body .contenedor-principal .contenido {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      body .contenedor-principal .contenido .info {
+        width: 90%; }
+        body .contenedor-principal .contenido .info .parrafo {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+        body .contenedor-principal .contenido .info h2 {
+          font-weight: 400;
+          text-align: justify;
+          color: black;
+          font-size: calc(0.7em + 0.5vw); }
+        body .contenedor-principal .contenido .info .btn {
+          margin-top: 3%;
+          text-decoration: none;
+          color: white;
+          background-color: #FFB40D;
+          padding-left: 25px;
+          padding-right: 25px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-radius: 7px;
+          border: none;
+          font-size: calc(0.6em + 0.5vw); }
+          body .contenedor-principal .contenido .info .btn .btn:hover {
+            background-color: black;
+            color: white; }
+  body .galeria {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  body footer {
+    width: 100%;
+    height: 200px;
+    background: #030346;
+    background: #090416;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    body footer .footer-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%; }
+      body footer .footer-nav img {
+        width: 150px; }
+      body footer .footer-nav .subir {
+        padding: 10px;
+        border-radius: 50px; }
+        body footer .footer-nav .subir img {
+          width: 30px; }
+        body footer .footer-nav .subir .subir:hover {
+          background-color: white; }
+
+@media screen and (max-width: 768px) {
+  body .header {
+    padding-left: 0;
+    height: 50vh; }
+    body .header .menu_bar {
+      display: flex;
+      width: 100%;
+      background-color: black;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      z-index: 1000; }
+      body .header .menu_bar img {
+        padding: 10px; }
+      body .header .menu_bar .contenedor-boton {
+        margin-right: 10px; }
+    body .header nav {
+      background-color: black;
+      top: 57px;
+      left: -100%;
+      width: 40%;
+      height: 100%;
+      margin: 0;
+      position: fixed;
+      z-index: 1000; }
+      body .header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0; }
+        body .header nav ul li {
+          display: block;
+          width: calc(1em + 35vw);
+          border-bottom: 1px solid #FFB40D;
+          padding: 10px;
+          width: 100%; }
+          body .header nav ul li li:hover {
+            background-color: #FFB40D; }
+      body .header nav .icono {
+        display: none; }
+  body .contenido .info {
+    width: 100%; }
+  body footer {
+    height: 80px; }
+    body footer .footer-nav img {
+      width: 80px; } }
+
+@media screen and (max-width: 500px) {
+  footer {
+    height: 80px; }
+    footer .footer-nav img {
+      width: 30px; }
+    footer .footer-nav .subir a img {
+      width: 20px; } }
