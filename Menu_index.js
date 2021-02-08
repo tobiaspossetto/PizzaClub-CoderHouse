@@ -6,7 +6,7 @@ function cambiarImagenjQ() {
     if (contador == 1) {
 
         $("#icono").attr("src", "assets/img/menu-activo.png");
-        $("#icono").attr("width", "25px");
+        $("#icono").attr("width", "20px");
     } else {
         $("#icono").attr("src", "assets/img/menu.png");
     }

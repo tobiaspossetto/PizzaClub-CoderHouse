@@ -241,13 +241,7 @@ main .textos {
     background-size: cover;
     display: flex;
     justify-content: space-around;
-}
-
-.menus {
-    background-color: aquamarine;
-    display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 
 .italianos {
@@ -316,16 +310,46 @@ main .textos {
 /*Bebidas seccion*/
 
 .bebidas {
-    background-color: goldenrod;
+    height: auto;
+    background-image: url(../assets/img/cartafondo3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-bebidas {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 40px auto 40px auto;
+    padding-top: 15px;
+}
+
+.contenedor-bebidas .titulo {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px, 5px, auto, 5px;
+    color: black;
+}
+
+.contenedor-bebidas .info {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    color: black;
+    padding: 10px;
+    border-bottom: 1px dashed #FFB40D;
+}
+
+
+/*
+.bebidas {
     background-image: url(../assets/img/cartafondo3.jpg);
     background-attachment: fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
-    padding: 40px;
+    align-items: center;
 }
 
 .menu-bebidas {
@@ -333,29 +357,32 @@ main .textos {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.menu-bebidas .contenedor-bebidas {
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 50%;
+    padding: 40px;
     color: black;
-    padding: 20px;
 }
 
-.menu-bebidas .contenedor-bebidas .titulo {
+.menu-bebidas .titulo {
     text-align: center;
 }
 
-.menu-bebidas .contenedor-bebidas .info {
+.menu-bebidas .info {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     border-bottom: 1px dashed #FFB40D;
 }
+*/
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
     .header {
         height: 50vh;
+        margin-bottom: 30px;
+    }
+    main .textos {
+        margin-top: 0;
+    }
+    main .textos p {
+        margin-bottom: 30px;
     }
 }
 

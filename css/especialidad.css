@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Ocultar scroll */
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/*GRID ES EL BODY*/
+
+.grid-especialidad {
+    display: grid;
+    /*DISEÑO LA GRILLA*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    /*                   -----------------------------------------------*/
+    grid-template-areas: /*|*/
+    "header header header header "/*|*/
+    /*                 -----------------------------------------------*/
+    /*|*/
+    "introduccion introduccion introduccion introduccion"/*|*/
+    /*                 -----------------------------------------------*/
+    /*|*/
+    "contenido  contenido contenido contenido"/*|*/
+    /*                 -----------------------------------------------*/
+    "cta  cta cta cta "
+    /*|*/
+    "footer footer footer footer ";
+    /*|*/
+}
+
+
+/*Lo siguiente es el copy del menu*/
+
+.grid-especialidad .header {
+    grid-area: header;
+    background: rgb(9, 4, 22);
+    color: white;
+    background: url(../assets/img/recomendacionfondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+header nav {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header nav ul li {
+    margin-right: 10px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header nav ul li .activo {
+    text-decoration: underline;
+}
+
+.menu_bar {
+    display: none;
+}
+
+header .eslogan {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+header .eslogan h1 {
+    font-weight: 400;
+    text-align: center;
+    font-size: calc(1em + 6vw);
+}
+
+header .eslogan h1 .nombre {
+    color: #FFB40D;
+}
+
+header .eslogan .linea {
+    width: calc(1em + 16vw);
+    height: 5px;
+    background-color: #FFB40D;
+    border: none;
+}
+
+
+/*Seccion introduccion*/
+
+.introduccion {
+    grid-area: introduccion;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.introduccion h2 {
+    width: 90%;
+    text-align: center;
+    font-size: calc(1em + 1.5vw);
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.introduccion p {
+    margin-bottom: 40px;
+    width: 90%;
+    text-align: center;
+    font-size: calc(1em + 0.5vw);
+}
+
+.introduccion .resaltar {
+    color: #FFB40D;
+}
+
+
+/*Seccion contenido*/
+
+.contenido {
+    grid-area: contenido;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*ITALIANA*/
+
+.contenido .italiana {
+    display: flex;
+    width: 95%;
+    height: 450px;
+    justify-content: space-evenly;
+    background-color: rgb(236, 236, 236);
+}
+
+.contenido .italiana .contenedor-visual {
+    width: 40%;
+    height: 100%;
+}
+
+.contenido .italiana .contenedor-visual .imagen {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/recomedacionItaliana.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenido .italiana .contenedor-info {
+    margin: 10px;
+    width: 60%;
+    padding: 20px;
+}
+
+.contenido .italiana .contenedor-info h3 {
+    text-align: center;
+    font-size: calc(1em + 3vw);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.contenido .italiana .contenedor-info ol li {
+    font-size: calc(1em + 0.5vw);
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+
+/*VS*/
+
+.contenido .vs {
+    text-align: center;
+    font-weight: 800;
+    margin: 80px 0 80px 0;
+    font-size: calc(1em + 6vw);
+}
+
+
+/*AMERICANA*/
+
+.contenido .americana {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 450px;
+}
+
+.contenido .americana .contenedor-visual {
+    background-color: black;
+    color: white;
+    width: calc(1em + 20vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 40px;
+    -webkit-box-shadow: 9px 11px 5px -4px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 9px 11px 5px -4px rgba(0, 0, 0, 0.18);
+    box-shadow: 9px 11px 5px -4px rgba(0, 0, 0, 0.18);
+}
+
+.contenido .americana .contenedor-visual .imagen {
+    width: 100%;
+    height: 70%;
+    background-image: url(../assets/img/recomendacionAmericana.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px 40px 0 0;
+}
+
+.contenido .americana .contenedor-visual .nombre {
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+
+.contenido .americana .contenedor-visual .nombre h3 {
+    font-size: calc(1em + 1.5vw);
+    font-weight: 600;
+}
+
+.contenido .americana .contenedor-info {
+    margin: 10px;
+}
+
+.contenido .americana .contenedor-info h3 {
+    font-size: calc(1em + 3vw);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.contenido .americana .contenedor-info ol li {
+    font-size: calc(1em + 0.5vw);
+    margin-bottom: 30px;
+}
+
+
+/*Seccion Call to Action*/
+
+.cta {
+    grid-area: cta;
+    display: flex;
+    align-items: center;
+    color: black;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.cta .btn {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #FFB40D;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    border: none;
+    font-size: calc(0.5em + 1vw);
+}
+
+.cta h3 {
+    font-weight: 700;
+    font-size: calc(1em + 3vw);
+}
+
+.cta .btn {
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: #FFB40D;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    border: none;
+    font-size: calc(0.5em + 1vw);
+}
+
+.cta .btn:hover {
+    color: white;
+    background-color: #000000;
+}
+
+
+/*Footer*/
+
+.footer {
+    grid-area: footer;
+    width: 100%;
+    height: 200px;
+    background: rgb(3, 3, 70);
+    background: linear-gradient(117deg, rgba(3, 3, 70, 1) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 95%);
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer .footer-nav img {
+    width: 150px;
+}
+
+footer .footer-nav .subir {
+    padding: 10px;
+    border-radius: 50px;
+}
+
+footer .footer-nav .subir:hover {
+    background-color: white;
+}
+
+footer .footer-nav .subir a img {
+    width: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+    /*Media para el contenido*/
+    .introduccion {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    /*Media para el header*/
+    header nav {
+        background-color: black;
+        top: 57px;
+        left: -100%;
+        width: 40%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+        z-index: 1000;
+    }
+    header nav ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    header .icono {
+        display: none;
+    }
+    header nav ul li {
+        display: block;
+        width: calc(1em + 35vw);
+        border-bottom: 2px solid #FFB40D;
+        padding: 10px;
+    }
+    header nav ul li:hover {
+        background-color: #FFB40D;
+    }
+    .menu_bar {
+        display: flex;
+        width: 100%;
+        background-color: black;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 1000;
+    }
+    .menu_bar img {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /*Media para footer*/
+    .footer {
+        height: 100px;
+    }
+    footer .footer-nav img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    /*contenido*/
+}
+
+@media screen and (max-width: 700px) {
+    /*footer*/
+    .footer {
+        height: 80px;
+    }
+    footer .footer-nav img {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /*footer*/
+    .footer {
+        height: 80px;
+    }
+    footer .footer-nav img {
+        width: 50px;
+    }
+    footer .footer-nav .subir a img {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    /*contenido*/
+    /*media Call to Action*/
+    .cta {
+        grid-area: cta;
+        display: flex;
+        align-items: center;
+        color: black;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .cta .btn {
+        margin-top: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: #FFB40D;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 7px;
+        border: none;
+        font-size: calc(0.5em + 1vw);
+    }
+    .cta h3 {
+        font-weight: 700;
+        font-size: calc(1em + 3vw);
+    }
+    .cta .btn {
+        margin-top: 20px;
+        text-decoration: none;
+        color: white;
+        background-color: #FFB40D;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 7px;
+        border: none;
+        font-size: calc(0.8em + 1vw);
+    }
+    .cta .btn:hover {
+        color: white;
+        background-color: #000000;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .contenido {
+        height: 500px;
+    }
+    .contenido .italiana {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgb(236, 236, 236);
+    }
+    .contenido .italiana .contenedor-visual {
+        width: 100%;
+        height: 150px;
+    }
+    .contenido .italiana .contenedor-visual .imagen {
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/recomedacionItaliana.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .contenido .italiana .contenedor-info {
+        margin: 10px;
+        width: 100%;
+        padding: 0;
+    }
+    .contenido .italiana .contenedor-info h3 {
+        text-align: center;
+        font-size: calc(1em + 3vw);
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+    .contenido .italiana .contenedor-info ol li {
+        font-size: calc(1em + 0.5vw);
+        margin-bottom: 30px;
+        list-style: none;
+        width: 90%;
+        text-align: justify;
+    }
+}
