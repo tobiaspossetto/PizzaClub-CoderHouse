@@ -2,6 +2,9 @@
 $fuente: 'Raleway';
 $amarillo: #FFB40D;
 $negro: rgb(9, 4, 22);
+$rojo: rgb(150, 5, 5);
+$verde: #0d9e20;
+$azul: rgb(1, 12, 43);
 * {
     margin: 0;
     padding: 0;
@@ -67,7 +70,7 @@ $negro: rgb(9, 4, 22);
             }
             .eslogan__btn:hover {
                 background-color: white;
-                color: black;
+                color: $negro;
             }
         }
     }
@@ -96,20 +99,20 @@ $negro: rgb(9, 4, 22);
                 .contenido__titulo {
                     font-weight: 400;
                     text-align: justify;
-                    color: black;
+                    color: $negro;
                     font-size: calc(0.7em + 0.5vw);
                 }
                 .contenido__parrafo {
                     font-weight: 400;
                     text-align: justify;
-                    color: black;
+                    color: $negro;
                     font-size: calc(0.7em + 0.5vw);
                 }
                 .contenido__btn {
                     @include btn($amarillo);
                 }
                 .contenido__btn:hover {
-                    background-color: black;
+                    background-color: $negro;
                     color: white;
                 }
             }
@@ -117,7 +120,6 @@ $negro: rgb(9, 4, 22);
     }
     .galeria {
         margin-top: 150px;
-        margin-bottom: 50px;
     }
     .footer {
         @include footer;
@@ -127,13 +129,13 @@ $negro: rgb(9, 4, 22);
 .carta {
     @include body('../assets/img/cartafondo1.jpg');
     .contenido {
-        background-color: black;
+        background-color: $negro;
         height: 200px;
         background-color: white;
         height: auto;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
         .contenido__textos {
-            color: black;
+            color: $negro;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -145,7 +147,7 @@ $negro: rgb(9, 4, 22);
                 font-weight: 600;
                 width: 80%;
             }
-            .coontenido__p {
+            .contenido__p {
                 font-size: calc(1em + 0.5vw);
                 width: 80%;
                 .coontenido__strong {
@@ -173,13 +175,13 @@ $negro: rgb(9, 4, 22);
                     text-align: center;
                     margin-bottom: 10px;
                     padding: 5px, 5px, auto, 5px;
-                    color: black;
+                    color: $negro;
                 }
                 .menus__italianos-info {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    color: black;
+                    color: $negro;
                     padding: 10px;
                     border-bottom: 1px dashed #FFB40D;
                 }
@@ -196,13 +198,13 @@ $negro: rgb(9, 4, 22);
                     text-align: center;
                     margin-bottom: 10px;
                     padding: 5px, 5px, auto, 5px;
-                    color: black;
+                    color: $negro;
                 }
                 .menus__americanos-info {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    color: black;
+                    color: $negro;
                     padding: 10px;
                     border-bottom: 1px dashed #FFB40D;
                 }
@@ -226,13 +228,13 @@ $negro: rgb(9, 4, 22);
                     text-align: center;
                     margin-bottom: 10px;
                     padding: 5px, 5px, auto, 5px;
-                    color: black;
+                    color: $negro;
                 }
                 .bebidas__info {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    color: black;
+                    color: $negro;
                     padding: 10px;
                     border-bottom: 1px dashed #FFB40D;
                 }
@@ -255,12 +257,12 @@ $negro: rgb(9, 4, 22);
     }
     .introduccion {
         display: flex;
-        color: black;
+        color: $negro;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 100px;
-        margin-top: 100px;
+        margin-bottom: 40px;
+        margin-top: 40px;
         .introduccion__titulo {
             width: 90%;
             text-align: center;
@@ -279,17 +281,17 @@ $negro: rgb(9, 4, 22);
         }
     }
     .contenidoEspecialidad {
-        color: black;
+        color: $negro;
         display: flex;
         flex-direction: column;
         align-items: center;
         .contenidoEspecialidad__italiana {
-            border: 5px solid #FFB40D;
+            border: 6px solid $verde;
             display: flex;
             width: 95%;
             height: 500px;
             justify-content: space-evenly;
-            background-color: black;
+            background-color: $rojo;
             .contenidoEspecialidad__contenedor-visual {
                 width: 40%;
                 height: 100%;
@@ -321,7 +323,8 @@ $negro: rgb(9, 4, 22);
                         font-weight: 400;
                     }
                     .contenidoEspecialidad__linea {
-                        background-color: #FFB40D;
+                        background-color: $verde;
+                        height: 1px;
                     }
                 }
             }
@@ -335,12 +338,12 @@ $negro: rgb(9, 4, 22);
             }
         }
         .contenidoEspecialidad__americana {
-            border: 5px solid #FFB40D;
+            border: 6px solid $rojo;
             display: flex;
             width: 95%;
             height: 500px;
             justify-content: space-evenly;
-            background-color: black;
+            background-color: $azul;
             .contenidoEspecialidad__contenedor-visual {
                 width: 40%;
                 height: 100%;
@@ -372,7 +375,8 @@ $negro: rgb(9, 4, 22);
                         font-weight: 400;
                     }
                     .contenidoEspecialidad__linea {
-                        background-color: #FFB40D;
+                        background-color: rgb(150, 5, 5);
+                        height: 1px;
                     }
                 }
             }
@@ -381,7 +385,7 @@ $negro: rgb(9, 4, 22);
     .cta {
         display: flex;
         align-items: center;
-        color: black;
+        color: $negro;
         flex-direction: column;
         margin-bottom: 100px;
         margin-top: 100px;
@@ -393,7 +397,7 @@ $negro: rgb(9, 4, 22);
             @include btn(#FFB40D);
         }
         .cta__btn:hover {
-            background-color: black;
+            background-color: $negro;
         }
     }
     .footer {
@@ -414,11 +418,11 @@ $negro: rgb(9, 4, 22);
     .titulo {
         text-align: center;
         padding: 5px;
-        margin: 100px 0 100px 0;
+        margin: 60px 0 60px 0;
         .titulo__h1 {
             font-weight: 500;
             font-size: calc(1em + 4vw);
-            color: black;
+            color: $negro;
         }
     }
     .imagen {
@@ -433,7 +437,7 @@ $negro: rgb(9, 4, 22);
         margin-bottom: 50px;
     }
     .historia {
-        color: black;
+        color: $negro;
         display: flex;
         text-align: center;
         justify-content: center;
@@ -452,7 +456,7 @@ $negro: rgb(9, 4, 22);
         display: none;
     }
     .horarios {
-        color: black;
+        color: $negro;
         margin-top: 10px;
         display: flex;
         justify-content: center;
@@ -475,7 +479,7 @@ $negro: rgb(9, 4, 22);
         }
     }
     .direccion {
-        color: black;
+        color: $negro;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -507,7 +511,7 @@ $negro: rgb(9, 4, 22);
 }
 
 .contacto {
-    @include body('../assets/img/contacto1op.png');
+    @include body('../assets/img/contacto1op.jpg');
     .header {
         .eslogan {
             .eslogan__titulo {
@@ -516,9 +520,9 @@ $negro: rgb(9, 4, 22);
         }
     }
     .titulo {
-        margin: 100px 10px 100px 10px;
+        margin: 40px 10px 40px 10px;
         .titulo__h2 {
-            color: black;
+            color: $negro;
             text-align: center;
             font-size: calc(1em + 0.8vw);
             font-weight: 400;
@@ -529,11 +533,11 @@ $negro: rgb(9, 4, 22);
         width: 100%;
         justify-content: center;
         align-items: center;
-        margin-bottom: 150px;
+        margin-bottom: 40px;
         .formulario__contenedor {
             padding: 10px;
-            background-color: #000000;
-            border-radius: 10px;
+            background-color: $negro;
+            border-radius: 5px;
             .formulario__nombre,
             .formulario__correo,
             .formulario__textarea {
@@ -561,14 +565,14 @@ $negro: rgb(9, 4, 22);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin: 10px auto 5px auto;
+                margin: 20px auto 20px auto;
                 .enviar__btn {
                     padding: 10px;
                     width: 20%;
                     min-width: 90px;
                     background-color: #FFB40D;
                     font-weight: 700;
-                    color: black;
+                    color: $negro;
                     border: none;
                     border-radius: 5px;
                 }

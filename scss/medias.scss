@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     .body {
         .header {
             padding-left: 0;
@@ -63,6 +63,12 @@
                     width: 80px;
                 }
             }
+        }
+    }
+    .inicio {
+        .galeria {
+            margin-top: 50px;
+            padding: 0;
         }
     }
     //MEDIA PARA PAGINA ESPECIALIDAD
@@ -154,10 +160,21 @@
 //////////////////////////
 //MEDIDAS PARA PAGINA ESPECIALIDAD
 @media screen and (max-width: 1300px) {
-    /*Media para el contenido*/
     .introduccion {
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+}
+
+//media especial para el formulario de contacto
+@media screen and (max-width: 850px) {
+    .contacto {
+        .formulario {
+            margin-bottom: 0;
+            .formulario__contenedor {
+                border-radius: 0;
+            }
+        }
     }
 }
 

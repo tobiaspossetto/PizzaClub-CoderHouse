@@ -20,7 +20,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     padding: 0; }
     .inicio .header .nav {
       width: 95%;
@@ -72,7 +72,7 @@
         font-size: calc(0.5em + 1vw); }
       .inicio .header .eslogan .eslogan__btn:hover {
         background-color: white;
-        color: black; }
+        color: #090416; }
   .inicio .contenedor-principal {
     margin: 0; }
     .inicio .contenedor-principal .sidebar {
@@ -95,12 +95,12 @@
         .inicio .contenedor-principal .contenido .contenido__info .contenido__titulo {
           font-weight: 400;
           text-align: justify;
-          color: black;
+          color: #090416;
           font-size: calc(0.7em + 0.5vw); }
         .inicio .contenedor-principal .contenido .contenido__info .contenido__parrafo {
           font-weight: 400;
           text-align: justify;
-          color: black;
+          color: #090416;
           font-size: calc(0.7em + 0.5vw); }
         .inicio .contenedor-principal .contenido .contenido__info .contenido__btn {
           margin-top: 20px;
@@ -115,11 +115,10 @@
           border: none;
           font-size: calc(0.5em + 1vw); }
         .inicio .contenedor-principal .contenido .contenido__info .contenido__btn:hover {
-          background-color: black;
+          background-color: #090416;
           color: white; }
   .inicio .galeria {
-    margin-top: 150px;
-    margin-bottom: 50px; }
+    margin-top: 150px; }
   .inicio .footer {
     width: 100%;
     height: 200px;
@@ -158,7 +157,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     padding: 0; }
     .carta .header .nav {
       width: 95%;
@@ -204,13 +203,13 @@
         border: none;
         margin-top: 5px; }
   .carta .contenido {
-    background-color: black;
+    background-color: #090416;
     height: 200px;
     background-color: white;
     height: auto;
-    margin-bottom: 80px; }
+    margin-bottom: 40px; }
     .carta .contenido .contenido__textos {
-      color: black;
+      color: #090416;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -221,10 +220,10 @@
         font-size: calc(1em + 1.5vw);
         font-weight: 600;
         width: 80%; }
-      .carta .contenido .contenido__textos .coontenido__p {
+      .carta .contenido .contenido__textos .contenido__p {
         font-size: calc(1em + 0.5vw);
         width: 80%; }
-        .carta .contenido .contenido__textos .coontenido__p .coontenido__strong {
+        .carta .contenido .contenido__textos .contenido__p .coontenido__strong {
           color: #FFB40D; }
   .carta .menus {
     height: auto;
@@ -244,12 +243,12 @@
         text-align: center;
         margin-bottom: 10px;
         padding: 5px, 5px, auto, 5px;
-        color: black; }
+        color: #090416; }
       .carta .menus .menus__italianos .menus__contenedor-italiano .menus__italianos-info {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: black;
+        color: #090416;
         padding: 10px;
         border-bottom: 1px dashed #FFB40D; }
     .carta .menus .menus__americanos {
@@ -262,12 +261,12 @@
         text-align: center;
         margin-bottom: 10px;
         padding: 5px, 5px, auto, 5px;
-        color: black; }
+        color: #090416; }
       .carta .menus .menus__americanos .menus__contenedor-americano .menus__americanos-info {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: black;
+        color: #090416;
         padding: 10px;
         border-bottom: 1px dashed #FFB40D; }
   .carta .bebidas {
@@ -286,12 +285,12 @@
         text-align: center;
         margin-bottom: 10px;
         padding: 5px, 5px, auto, 5px;
-        color: black; }
+        color: #090416; }
       .carta .bebidas .bebidas__menu .bebidas__contenedor-bebidas .bebidas__info {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: black;
+        color: #090416;
         padding: 10px;
         border-bottom: 1px dashed #FFB40D; }
   .carta .footer {
@@ -332,7 +331,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     padding: 0; }
     .especialidad .header .nav {
       width: 95%;
@@ -381,12 +380,12 @@
     font-size: calc(1em + 5vw); }
   .especialidad .introduccion {
     display: flex;
-    color: black;
+    color: #090416;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
-    margin-top: 100px; }
+    margin-bottom: 40px;
+    margin-top: 40px; }
     .especialidad .introduccion .introduccion__titulo {
       width: 90%;
       text-align: center;
@@ -401,17 +400,17 @@
     .especialidad .introduccion .introduccion__resaltar {
       color: #FFB40D; }
   .especialidad .contenidoEspecialidad {
-    color: black;
+    color: #090416;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .especialidad .contenidoEspecialidad .contenidoEspecialidad__italiana {
-      border: 5px solid #FFB40D;
+      border: 6px solid #0d9e20;
       display: flex;
       width: 95%;
       height: 500px;
       justify-content: space-evenly;
-      background-color: black; }
+      background-color: #960505; }
       .especialidad .contenidoEspecialidad .contenidoEspecialidad__italiana .contenidoEspecialidad__contenedor-visual {
         width: 40%;
         height: 100%; }
@@ -439,19 +438,20 @@
             margin-bottom: 30px;
             font-weight: 400; }
           .especialidad .contenidoEspecialidad .contenidoEspecialidad__italiana .contenidoEspecialidad__info .contenidoEspecialidad__ol .contenidoEspecialidad__linea {
-            background-color: #FFB40D; }
+            background-color: #0d9e20;
+            height: 1px; }
     .especialidad .contenidoEspecialidad .vs h1 {
       text-align: center;
       font-weight: 800;
       margin: 80px 0 80px 0;
       font-size: calc(1em + 10vw); }
     .especialidad .contenidoEspecialidad .contenidoEspecialidad__americana {
-      border: 5px solid #FFB40D;
+      border: 6px solid #960505;
       display: flex;
       width: 95%;
       height: 500px;
       justify-content: space-evenly;
-      background-color: black; }
+      background-color: #010c2b; }
       .especialidad .contenidoEspecialidad .contenidoEspecialidad__americana .contenidoEspecialidad__contenedor-visual {
         width: 40%;
         height: 100%; }
@@ -479,11 +479,12 @@
             margin-bottom: 30px;
             font-weight: 400; }
           .especialidad .contenidoEspecialidad .contenidoEspecialidad__americana .contenidoEspecialidad__info .contenidoEspecialidad__ol .contenidoEspecialidad__linea {
-            background-color: #FFB40D; }
+            background-color: #960505;
+            height: 1px; }
   .especialidad .cta {
     display: flex;
     align-items: center;
-    color: black;
+    color: #090416;
     flex-direction: column;
     margin-bottom: 100px;
     margin-top: 100px; }
@@ -503,7 +504,7 @@
       border: none;
       font-size: calc(0.5em + 1vw); }
     .especialidad .cta .cta__btn:hover {
-      background-color: black; }
+      background-color: #090416; }
   .especialidad .footer {
     width: 100%;
     height: 200px;
@@ -542,7 +543,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     padding: 0; }
     .nosotros .header .nav {
       width: 95%;
@@ -594,11 +595,11 @@
   .nosotros .titulo {
     text-align: center;
     padding: 5px;
-    margin: 100px 0 100px 0; }
+    margin: 60px 0 60px 0; }
     .nosotros .titulo .titulo__h1 {
       font-weight: 500;
       font-size: calc(1em + 4vw);
-      color: black; }
+      color: #090416; }
   .nosotros .imagen {
     margin-bottom: 50px; }
     .nosotros .imagen .imagen__contenedor-imagen {
@@ -608,7 +609,7 @@
       .nosotros .imagen .imagen__contenedor-imagen .imagen__img {
         width: 90%; }
   .nosotros .historia {
-    color: black;
+    color: #090416;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -623,7 +624,7 @@
   .nosotros .linea {
     display: none; }
   .nosotros .horarios {
-    color: black;
+    color: #090416;
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -637,7 +638,7 @@
       font-size: calc(1em + 0.2vw);
       padding: 10px; }
   .nosotros .direccion {
-    color: black;
+    color: #090416;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -683,7 +684,7 @@
   overflow-x: hidden; }
   .contacto .header {
     color: white;
-    background-image: url("../assets/img/contacto1op.png");
+    background-image: url("../assets/img/contacto1op.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -691,7 +692,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     padding: 0; }
     .contacto .header .nav {
       width: 95%;
@@ -739,9 +740,9 @@
   .contacto .header .eslogan .eslogan__titulo {
     font-size: calc(1em + 5vw); }
   .contacto .titulo {
-    margin: 100px 10px 100px 10px; }
+    margin: 40px 10px 40px 10px; }
     .contacto .titulo .titulo__h2 {
-      color: black;
+      color: #090416;
       text-align: center;
       font-size: calc(1em + 0.8vw);
       font-weight: 400; }
@@ -750,11 +751,11 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-bottom: 150px; }
+    margin-bottom: 40px; }
     .contacto .formulario .formulario__contenedor {
       padding: 10px;
-      background-color: #000000;
-      border-radius: 10px; }
+      background-color: #090416;
+      border-radius: 5px; }
       .contacto .formulario .formulario__contenedor .formulario__nombre,
       .contacto .formulario .formulario__contenedor .formulario__correo,
       .contacto .formulario .formulario__contenedor .formulario__textarea {
@@ -779,14 +780,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 10px auto 5px auto; }
+        margin: 20px auto 20px auto; }
         .contacto .formulario .formulario__contenedor .enviar .enviar__btn {
           padding: 10px;
           width: 20%;
           min-width: 90px;
           background-color: #FFB40D;
           font-weight: 700;
-          color: black;
+          color: #090416;
           border: none;
           border-radius: 5px; }
         .contacto .formulario .formulario__contenedor .enviar .enviar__btn:hover {
@@ -815,7 +816,7 @@
       .contacto .footer .footer__nav .footer__subir:hover {
         background-color: white; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .body .header {
     padding-left: 0;
     height: 50vh; }
@@ -865,6 +866,9 @@
     height: 80px; }
     .body .footer .footer__nav .footer__img {
       width: 80px; }
+  .inicio .galeria {
+    margin-top: 50px;
+    padding: 0; }
   .especialidad .contenidoEspecialidad {
     height: auto; }
     .especialidad .contenidoEspecialidad .contenidoEspecialidad__italiana,
@@ -922,10 +926,15 @@
       width: 20px; } }
 
 @media screen and (max-width: 1300px) {
-  /*Media para el contenido*/
   .introduccion {
     margin-bottom: 20px;
     margin-top: 20px; } }
+
+@media screen and (max-width: 850px) {
+  .contacto .formulario {
+    margin-bottom: 0; }
+    .contacto .formulario .formulario__contenedor {
+      border-radius: 0; } }
 
 /*
 @media screen and (max-width: 768px) {
