@@ -405,7 +405,7 @@
     flex-direction: column;
     align-items: center; }
     .especialidad .contenidoEspecialidad .contenidoEspecialidad__italiana {
-      border: 6px solid #0d9e20;
+      border: 3px solid #0d9e20;
       display: flex;
       width: 95%;
       height: 500px;
@@ -446,7 +446,7 @@
       margin: 80px 0 80px 0;
       font-size: calc(1em + 10vw); }
     .especialidad .contenidoEspecialidad .contenidoEspecialidad__americana {
-      border: 6px solid #960505;
+      border: 3px solid #960505;
       display: flex;
       width: 95%;
       height: 500px;
