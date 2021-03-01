@@ -1,7 +1,7 @@
-@import 'mixin.scss';
+@import '_mixin.scss';
 $fuente: 'Raleway';
 $amarillo: #FFB40D;
-$negro: rgb(9, 4, 22);
+$negro: rgb(0, 0, 0);
 $rojo: rgb(150, 5, 5);
 $verde: #0d9e20;
 $azul: rgb(1, 12, 43);
@@ -33,7 +33,7 @@ $azul: rgb(1, 12, 43);
                     color: white;
                     padding: 10px;
                     text-decoration: none;
-                    font-size: 20px;
+                    font-size: 23px;
                     .nav__a:hover {
                         text-decoration: underline;
                         color: white;
@@ -100,13 +100,13 @@ $azul: rgb(1, 12, 43);
                     font-weight: 400;
                     text-align: justify;
                     color: $negro;
-                    font-size: calc(0.7em + 0.5vw);
+                    font-size: calc(0.7em + 2.5vw);
                 }
                 .contenido__parrafo {
                     font-weight: 400;
                     text-align: justify;
                     color: $negro;
-                    font-size: calc(0.7em + 0.5vw);
+                    font-size: calc(0.7em + 0.9vw);
                 }
                 .contenido__btn {
                     @include btn($amarillo);
@@ -120,6 +120,7 @@ $azul: rgb(1, 12, 43);
     }
     .galeria {
         margin-top: 150px;
+        margin-bottom: 150px
     }
     .footer {
         @include footer;
@@ -176,8 +177,12 @@ $azul: rgb(1, 12, 43);
                     margin-bottom: 10px;
                     padding: 5px, 5px, auto, 5px;
                     color: $negro;
+                    .menus__italianos-tituloH3 {
+                        font-size: calc(1em + 1.5vw);
+                    }
                 }
                 .menus__italianos-info {
+                    font-size: calc(1em + 0.5vw);
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -199,11 +204,15 @@ $azul: rgb(1, 12, 43);
                     margin-bottom: 10px;
                     padding: 5px, 5px, auto, 5px;
                     color: $negro;
+                    .menus__americanos-tituloH3 {
+                        font-size: calc(1em + 1.5vw);
+                    }
                 }
                 .menus__americanos-info {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    font-size: calc(1em + 0.5vw);
                     color: $negro;
                     padding: 10px;
                     border-bottom: 1px dashed #FFB40D;
@@ -229,11 +238,15 @@ $azul: rgb(1, 12, 43);
                     margin-bottom: 10px;
                     padding: 5px, 5px, auto, 5px;
                     color: $negro;
+                    .bebidas__tituloH3 {
+                        font-size: calc(1em + 1.5vw);
+                    }
                 }
                 .bebidas__info {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    font-size: calc(1em + 0.5vw);
                     color: $negro;
                     padding: 10px;
                     border-bottom: 1px dashed #FFB40D;
@@ -445,7 +458,7 @@ $azul: rgb(1, 12, 43);
         .historia__p {
             width: 90%;
             text-align: justify;
-            font-size: calc(1em + 0.4vw);
+            font-size: calc(0.7em + 0.9vw);
         }
         .historia__destacar {
             color: #FFB40D;
@@ -542,7 +555,7 @@ $azul: rgb(1, 12, 43);
             .formulario__correo,
             .formulario__textarea {
                 padding: 10px;
-                color: #FFB40D;
+                color: #000000;
                 font-weight: 700;
                 font-size: calc(1em + 0.2vw);
             }
@@ -552,14 +565,14 @@ $azul: rgb(1, 12, 43);
                 border: none;
                 width: 100%;
                 border-radius: 5px;
-                color: #FFB40D;
+                color: #000000;
             }
             .formulario__textarea-input {
                 padding: 10px;
                 border: none;
                 width: 100%;
                 border-radius: 5px;
-                color: #FFB40D;
+                color: #000000;
             }
             .enviar {
                 display: flex;
@@ -588,4 +601,4 @@ $azul: rgb(1, 12, 43);
     }
 }
 
-@import 'medias.scss';
+@import '_medias.scss';

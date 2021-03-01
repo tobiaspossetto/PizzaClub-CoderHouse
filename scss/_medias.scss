@@ -62,12 +62,35 @@
                 .footer__img {
                     width: 80px;
                 }
+                .footer__firma {
+                    .footer__firma-img {
+                        width: 80px;
+                    }
+                }
+                .footer__social {
+                    .btn__twitter {
+                        .btn__twitter-img {
+                            width: 20px;
+                        }
+                    }
+                    .btn__wpp {
+                        .btn__wpp-img {
+                            width: 20px;
+                        }
+                    }
+                    .btn__twitter {
+                        .btn__instagram-img {
+                            width: 20px;
+                        }
+                    }
+                }
             }
         }
     }
     .inicio {
         .galeria {
             margin-top: 50px;
+            margin-bottom: 0px;
             padding: 0;
         }
     }
@@ -139,16 +162,34 @@
 }
 
 @media screen and (max-width: 500px) {
-    .footer {
-        height: 80px;
-        .footer__nav {
-            .footer__img {
-                width: 30px;
-            }
-            .footer__subir {
-                .footer__subir-btn {
-                    .footer__subir-img {
-                        width: 20px;
+    .body {
+        .footer {
+            .footer__nav {
+                .footer__img {
+                    width: 70px;
+                }
+                .footer__firma {
+                    .footer__firma-img {
+                        width: 80px;
+                    }
+                }
+                .footer__social {
+                    .btn__twitter {
+                        .btn__twitter-img {
+                            width: 15px;
+                            margin-right: 5px;
+                        }
+                    }
+                    .btn__wpp {
+                        .btn__wpp-img {
+                            width: 15px;
+                            margin-right: 5px;
+                        }
+                    }
+                    .btn__twitter {
+                        .btn__instagram-img {
+                            width: 15px;
+                        }
                     }
                 }
             }
