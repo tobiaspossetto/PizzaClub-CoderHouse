@@ -6,6 +6,7 @@
 
 <?php
 
+
 $remitente = $_POST['email'];/*email es el "name" del input mail*/
 $destinatario = 'tobigpossetto@gmail.com'; /*Mail al cual llegará el contenido del cormulario. Aca iria el mail al cual debe llegar el contenido del form*/
 $asunto = 'Consulta'; /*Asunto del mail*/
@@ -24,11 +25,12 @@ if (!$_POST){
     $headers = "X-Priority: 3\n";
     $headers = "X-MSMail-Priority: Normal\n";
     $headers = "X-Mailer: php\n";
-    $headers = "From: \"".$_POST['nombre']."  <".$remitente.">\n";
+    $headers .= "From: \"".$_POST['nombre']."\" <".$remitente.">\n";
+    //$headers = "From: \"".$_POST['nombre']."  <".$remitente.">\n";
     mail($destinatario, $asunto, $cuerpo, $headers);
     
-    //header('Location: https://pizzaclubtp.000webhostapp.com/pages/contacto.html/' . getenv('HTTP_REFERER'));
+    //header '../pages/contacto.html';
+   
     //include '../pages/contacto.html';
-    
 }
 ?>
